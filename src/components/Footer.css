@@ -1,0 +1,35 @@
+.foot {
+  background-color: rgb(232, 232, 226);
+}
+
+.foot-bar {
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 35px;
+}
+
+.first-info img {
+  max-width: 150px;
+  height: auto;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 7px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: red;
+}
+
+.second-info a {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+}
