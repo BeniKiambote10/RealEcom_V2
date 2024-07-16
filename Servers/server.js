@@ -11,10 +11,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 const db = mysql.createConnection({
-  host: "database-1.cjm6ce8cikky.us-east-1.rds.amazonaws.com",
-  user: "root",
-  password: "password",
-  database: "products_db",
+  host: "sql5.freesqldatabase.com",
+  user: "sql5720186",
+  password: "CTNjVNj985",
+  database: "sql5720186",
 });
 
 db.connect((err) => {
