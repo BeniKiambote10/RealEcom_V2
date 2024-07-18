@@ -9,10 +9,12 @@ const Footer = () => {
     <footer className="foot">
       <div className="foot-bar">
         <div className="first-info">
-          <img
-            src={logoImage} // Use the imported logoImage here
-            alt="Logo-footer"
-          />
+          <a href="/Users/r2h/Desktop/my-portfolio2/src/Pages/Home.css">
+            <img
+              src={logoImage} // Use the imported logoImage here
+              alt="Logo-footer"
+            />
+          </a>
           <p>BONO@Gmail.com</p>
           <div className="social-icons">
             <a href="https://www.facebook.com/">

@@ -1,5 +1,4 @@
-// src/App.js
-// src/App.js
+
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -10,7 +9,8 @@ import ProductsPage from "./Pages/ProductsPages";
 import ContactPage from "./Pages/ContactForm";
 import "./App.css";
 import "../src/Pages/Home.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function App() {
   return (

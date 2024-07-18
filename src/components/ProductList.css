@@ -1,4 +1,4 @@
-.product-list {
+/* .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 15px;
@@ -6,10 +6,10 @@
 }
 
 .product {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(29, 28, 28, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -35,16 +35,15 @@
   font-size: 12px;
   color: #888888;
   margin-bottom: 5px;
-}
+} */
 
 /* FormStyles.css */
 
-/* Centering the form and styling input fields */
 .form-container {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Full viewport height */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   padding: 20px;
   flex-direction: column;
 }
@@ -68,7 +67,7 @@ input[type="text"]:focus {
 }
 
 button {
-  margin-top: 10px; /* Adjust spacing as needed */
+  margin-top: 10px;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -82,47 +81,65 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-/* ProductList.css or App.css (or index.css) */
+
 .searchBoxCon {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
 
 #searchBox {
-  padding: 10px;
-  width: 300px; /* Adjust width as needed */
+  padding: 10px 15px;
+  width: 300px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 #searchBox:focus {
   outline: none;
-  border-color: #007bff; /* Change color on focus */
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
 }
-/* ProductList.css or App.css (or index.css) */
 
 .price-filter {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   gap: 20px;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .price-label {
-  margin-right: 20px;
   font-size: 16px;
+  color: #333;
+  margin-right: 10px;
 }
 
 .price-input {
-  padding: 8px;
-  width: 100px;
+  padding: 10px;
+  width: 120px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .price-input:focus {
   outline: none;
   border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.price-filter label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #666;
 }

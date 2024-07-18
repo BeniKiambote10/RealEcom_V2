@@ -3,7 +3,7 @@ import axios from "axios";
 import "./ProductList.css";
 
 const ProductList = ({ products, searchText }) => {
-  const [priceRange, setPriceRange] = useState({ min: 0, max: 1000 });
+  const [priceRange, setPriceRange] = useState({ min: 0, max: 100 });
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
@@ -50,14 +50,18 @@ const ProductList = ({ products, searchText }) => {
         </label>
       </div>
       <div className="product-list">
-        {filteredProducts.map((product) => (
-          <div key={product.id} className="product">
-            <img src={`${product.image}`} alt={product.name} />
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <p>${product.price}</p>
-          </div>
-        ))}
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product) => (
+            <div key={product.id} className="product">
+              <img src={`${product.image}`} alt={product.name} />
+              <h2>{product.name}</h2>
+              <p>{product.description}</p>
+              <p>${product.price}</p>
+            </div>
+          ))
+        ) : (
+          <p>No items found</p>
+        )}
       </div>
     </div>
   );

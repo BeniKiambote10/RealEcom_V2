@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import logo from "../image/bono-high-resolution-logo-white-transparent.png";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isActive ? "active" : ""}`}>
-      <div className="brand-title">BONO</div>
+      <img src={logo} alt="BONO Logo" className="brand-logo" />
       <a href="#" className="toggle-button" onClick={handleToggle}>
         <span className="bar"></span>
         <span className="bar"></span>
