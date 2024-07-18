@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import "../components/Carousel.css";
 import CarouselComponent from "../components/Carousel"; // Import the carousel component
-import video from "/Users/r2h/Desktop/my-portfolio2/src/image/202407180853.mp4";
+import video from "../image/Grey Black Simple Bold Fashion Product Promotion Landscape Banner.png";
 
 const HomePage = () => {
   return (
