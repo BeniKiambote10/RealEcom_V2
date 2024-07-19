@@ -15,21 +15,30 @@ body {
   background-color: #000000;
   color: #fff;
   width: 100%;
+  padding: 0 20px; /* Add padding for better alignment */
 }
 
 .brand-logo {
   width: 150px; /* Set the desired width */
   height: auto; /* Maintain aspect ratio */
-  margin: 20px; /* Add margin around the logo */
   display: block; /* Ensure the margin auto works */
+}
+
+.navbar-links {
+  flex: 1; /* Allows the links container to grow */
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
 }
 
 .navbar-links ul {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-links li {
-  list-style: none;
+  margin: 0 15px; /* Space between navigation items */
 }
 
 .navbar-links li a {
@@ -101,6 +110,7 @@ body {
 
   .navbar-links li {
     text-align: center;
+    margin: 10px 0; /* Space between items in mobile view */
   }
 
   .navbar-links.active {

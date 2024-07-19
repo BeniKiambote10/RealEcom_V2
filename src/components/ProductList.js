@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import { CartContext } from "../CartContext";
 import "./ProductList.css";
 
 const ProductList = ({ products, searchText }) => {
   const [priceRange, setPriceRange] = useState({ min: 0, max: 100 });
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     setFilteredProducts(
@@ -59,6 +61,7 @@ const ProductList = ({ products, searchText }) => {
               <h2>{product.name}</h2>
               <p>{product.description}</p>
               <p>${product.price}</p>
+              <button onClick={() => addToCart(product)}>Add to Cart</button>
             </div>
           ))
         ) : (

@@ -8,6 +8,7 @@ import ContactPage from "./Pages/ContactForm";
 import "./App.css";
 import "../src/Pages/Home.css";
 import "react-multi-carousel/lib/styles.css";
+import Cart from "./components/Carts.js";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </main>
         <Footer />
