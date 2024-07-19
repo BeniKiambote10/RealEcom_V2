@@ -12,14 +12,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #492c1e;
+  background-color: #000000;
   color: #fff;
   width: 100%;
 }
 
 .brand-logo {
-  font-size: 1.5rem;
-  margin: 0.5rem;
+  width: 150px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px; /* Add margin around the logo */
+  display: block; /* Ensure the margin auto works */
 }
 
 .navbar-links ul {
@@ -32,13 +34,13 @@ body {
 
 .navbar-links li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   padding: 1rem;
   display: block;
 }
 
-.navbar-links li:hover {
-  text-decoration: underline;
+.navbar-links li:hover::before {
+  background-size: 110%;
 }
 
 .toggle-button {

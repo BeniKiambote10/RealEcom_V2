@@ -29,6 +29,8 @@ const ProductList = ({ products, searchText }) => {
 
   return (
     <div>
+      <h1>All Women's Clothing</h1>
+
       <div className="price-filter">
         <label>
           Min Price:

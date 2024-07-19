@@ -79,7 +79,7 @@ form {
   font-size: 16px;
   font-weight: 600;
   color: rgb(255, 255, 255);
-  background-color: #492c1e;
+  background-color: #000000;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -89,7 +89,7 @@ form {
 }
 .right-form {
   width: 45%;
-  border-left: 1px solid #492c1e;
+  border-left: 1px solid #000000;
 }
 .visual {
   display: flex;
@@ -126,7 +126,7 @@ form {
   font-size: 25px;
   align-items: center;
   border-bottom-right-radius: 30px;
-  background-color: #492c1e;
+  background-color: #000000;
 }
 .book {
   color: white;

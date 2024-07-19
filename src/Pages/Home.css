@@ -58,3 +58,41 @@ header.sticky {
 .center-text span {
   color: #6d3011;
 }
+.video-background {
+  position: relative;
+  overflow: hidden; /* Ensure no overflow */
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+}
+
+.video-background .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .video-background {
+    height: 40vh; /* Adjust height for smaller screens */
+  }
+
+  .video-background .video {
+    height: 100%;
+    object-fit: cover; /* Maintain cover for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-background {
+    height: 40vh; /* Adjust height for even smaller screens */
+  }
+
+  .video-background .video {
+    height: 100%;
+    object-fit: cover; /* Maintain cover for even smaller screens */
+  }
+}

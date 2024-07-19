@@ -1,5 +1,8 @@
 .foot {
-  background-color: rgb(232, 232, 226);
+  background-color: rgb(0, 0, 0);
+}
+.foot p {
+  color: white;
 }
 
 .foot-bar {
@@ -16,7 +19,7 @@
 }
 
 .social-icons a {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: 400;
   padding: 7px;
@@ -28,7 +31,7 @@
 }
 
 .second-info a {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: 400;
   text-decoration: none;

@@ -4,6 +4,22 @@
 
 h1 {
   margin: 1rem auto 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* App.css */
+
+/* Style for the h1 element within the App component */
+.App h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the span element within the h1 element in the App component */
+.App h1 span {
+  color: #442b27; /* Example color */
+  font-weight: bold;
 }
 
 .product--image {
@@ -13,46 +29,48 @@ h1 {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   max-width: 320px;
   margin: auto 1rem;
   text-align: center;
   font-family: arial;
   margin-bottom: 20%;
+  border: none;
 }
 
 .price {
-  color: grey;
-  font-size: 22px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .card button {
-  border: none;
-  outline: 0;
   padding: 12px;
-  color: white;
-  background-color: #6d3011;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   font-size: 18px;
+  border-radius: 20px;
 }
 
 .card button:hover {
-  opacity: 0.7;
-}
-.video-background {
-  position: relative;
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevents video from overflowing */
+  background-color: #333;
 }
 
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Keeps aspect ratio while covering area */
+h4 {
+  font-size: 20px;
+}
+.des {
+  color: rgb(161, 7, 7);
+}
+.heart-icon {
+  color: #4140405a; /* Example color for the heart icon */
+  margin-left: 8px; /* Space between the name and the icon */
+  font-size: 18px;
+}
+.heart-icon:hover {
+  color: red;
 }

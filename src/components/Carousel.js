@@ -16,7 +16,9 @@ export default function carousel() {
 
   return (
     <div className="App">
-      <h1>Trending Products</h1>
+      <h1>
+        SHOP THE <span>LATEST</span>
+      </h1>
       <Carousel showDots={false} responsive={responsive}>
         {product}
       </Carousel>

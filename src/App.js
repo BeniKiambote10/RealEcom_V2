@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -9,7 +7,6 @@ import ProductsPage from "./Pages/ProductsPages";
 import ContactPage from "./Pages/ContactForm";
 import "./App.css";
 import "../src/Pages/Home.css";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 function App() {

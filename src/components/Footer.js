@@ -1,7 +1,7 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.css"; // Ensure you have the correct path
 import "bootstrap/dist/css/bootstrap.min.css";
-import logoImage from "../image/bono-high-resolution-logo-black-transparent-3.png"; // Adjust the path accordingly
+import logoImage from "../image/bono-high-resolution-logo-white-transparent.png"; // Adjust the path accordingly
 import "./Footer.css";
 
 const Footer = () => {
