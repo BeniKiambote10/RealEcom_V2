@@ -9,7 +9,9 @@ const ProductsPage = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await axios.get("http://localhost:3000/products");
+      const response = await axios.get(
+        "https://serversiderea.onrender.com/products"
+      );
       setProducts(response.data);
     };
     fetchProducts();
