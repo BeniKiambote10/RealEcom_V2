@@ -1,5 +1,10 @@
 .cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
 }
 
 .cart h2 {

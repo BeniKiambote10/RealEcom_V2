@@ -8,17 +8,15 @@ h1 {
 }
 /* App.css */
 
-/* Style for the h1 element within the App component */
 .App h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #ffffff;
   text-align: center;
   margin-top: 20px;
 }
 
-/* Style for the span element within the h1 element in the App component */
 .App h1 span {
-  color: #442b27; /* Example color */
+  color: #ab220d; /* Example color */
   font-weight: bold;
 }
 
@@ -53,7 +51,6 @@ h1 {
   cursor: pointer;
   width: 50%;
   font-size: 18px;
-  border-radius: 20px;
 }
 
 .card button:hover {

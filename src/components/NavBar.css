@@ -19,9 +19,10 @@ body {
 }
 
 .brand-logo {
-  width: 150px; /* Set the desired width */
+  width: 80px; /* Set the desired width */
   height: auto; /* Maintain aspect ratio */
-  display: block; /* Ensure the margin auto works */
+  display: block;
+  margin-left: 30px; /* Ensure the margin auto works */
 }
 
 .navbar-links {

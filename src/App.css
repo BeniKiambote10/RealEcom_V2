@@ -31,22 +31,32 @@
   color: #000000;
   margin-bottom: 5px;
 }
+.product button {
+  background-color: black;
+  margin-bottom: 20px;
+}
 
 @media (max-width: 600px) {
-  .product-list {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  .filter-controls {
+    flex-direction: column;
     gap: 10px;
   }
 
-  .product {
-    padding: 10px;
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
   }
 
   .product h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .product p {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .product button {
+    font-size: 12px;
+    padding: 10px;
   }
 }

@@ -4,12 +4,23 @@ import "./Contact.css"; // Ensure you have a corresponding CSS file for styling
 import logoImage from "../image/bono-high-resolution-logo-black-transparent-3.png";
 
 const ContactForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevents the default form submission
+
+    const form = event.target;
+    if (form.checkValidity()) {
+      console.log("Form submitted successfully");
+    } else {
+      console.log("Form validation failed");
+    }
+  };
+
   return (
     <div className="container">
       <div className="left-form">
         <h3 className="heading">Get In Touch With Us!</h3>
         <p className="text">How Can We Help?</p>
-        <form action="#">
+        <form action="#" onSubmit={handleSubmit}>
           <div className="inputform">
             <input
               type="text"
@@ -18,11 +29,13 @@ const ContactForm = () => {
               className="name"
               placeholder="Enter Your Name"
               required
+              pattern="[A-Za-z\s]+"
+              title="Name should only contain letters and spaces"
             />
           </div>
           <div className="inputform">
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               className="email"
