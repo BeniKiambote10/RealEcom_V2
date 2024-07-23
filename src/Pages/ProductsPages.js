@@ -14,7 +14,7 @@ const ProductsPage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await axios.get(
-        "https://realecom-v2.onrender.com/products"
+        "https://serversiderea.onrender.com/products"
       ); // Fetching product data from the API  //http://localhost:3000/products
       setProducts(response.data); // Updating the state with the fetched data
     };
