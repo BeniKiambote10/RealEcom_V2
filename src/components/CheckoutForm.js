@@ -9,6 +9,9 @@ const CheckoutForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    // Show an alert every time the submit button is clicked
+    alert("You have to be a user!");
+
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
       card: elements.getElement(CardElement),

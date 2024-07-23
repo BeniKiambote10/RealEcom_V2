@@ -35,6 +35,17 @@ const ProductList = ({ products, searchText }) => {
     }));
   };
 
+  // Handle add to cart action with prompt
+  const handleAddToCart = (product) => {
+    const confirmAdd = window.confirm(
+      `Are you sure you want to add ${product.name} to the cart?`
+    );
+    if (confirmAdd) {
+      addToCart(product);
+      alert("Added to Cart");
+    }
+  };
+
   return (
     <div>
       <h1>
@@ -76,7 +87,9 @@ const ProductList = ({ products, searchText }) => {
               <h2>{product.name}</h2>
               <p>{product.description}</p>
               <p>${product.price}</p>
-              <button onClick={() => addToCart(product)}>Add to Cart</button>
+              <button onClick={() => handleAddToCart(product)}>
+                Add to Cart
+              </button>
             </div>
           ))
         ) : (

@@ -1,4 +1,3 @@
-// Cart.js
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
 import "./Cart.css";
@@ -14,6 +13,16 @@ const Cart = () => {
     0
   );
 
+  const handleRemove = (id) => {
+    if (
+      window.confirm(
+        "Are you sure you want to remove this item from your cart?"
+      )
+    ) {
+      removeFromCart(id);
+    }
+  };
+
   return (
     <div className="cart">
       <h2>Your Cart</h2>
@@ -24,7 +33,7 @@ const Cart = () => {
               <img src={item.image} alt={item.name} />
               <h3>{item.name}</h3>
               <p>${Number(item.price || 0).toFixed(2)}</p>
-              <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              <button onClick={() => handleRemove(item.id)}>Remove</button>
             </div>
           ))}
           <div className="cart-total">

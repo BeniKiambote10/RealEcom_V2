@@ -41,22 +41,4 @@
     flex-direction: column;
     gap: 10px;
   }
-
-  .product-list {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 8px;
-  }
-
-  .product h2 {
-    font-size: 20px;
-  }
-
-  .product p {
-    font-size: 14px;
-  }
-
-  .product button {
-    font-size: 12px;
-    padding: 10px;
-  }
 }
